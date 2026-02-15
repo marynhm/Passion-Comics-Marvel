@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Comics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Mes Marvel Comics préférés</h1>
+
+
+<div id="galerie"></div>
+
+<!-- agrandir l'image au clic -->
+<div id="popup">
+    <span id="close">×</span>
+    <img id="popup-img">
+</div>
+
+<!-- Formulaire-->
+<h2>Ajouter un nouveau comics</h2>
+<form id="formulaire">
+    <div class="form-box">
+        <label for="titre">Titre :</label>
+        <input type="text" id="titre" placeholder="Titre du comic" required>
+
+        <label for="description">Description :</label>
+        <textarea id="description" placeholder="Description du comic" required></textarea>
+
+        <label for="url">URL de l'image :</label>
+        <input type="url" id="url" placeholder="Lien de l'image" required>
+
+        <!-- le bouton qui sert à prévisualiser avant d'ajouter -->
+        <button type="submit">Prévisualiser</button>
+    </div>
+</form>
+
+<!-- Zone de prévisualisation -->
+<div id="preview"></div>
+<footer>
+        <a href="mentions-legales.html" id="mentions-legales">Mentions légales</a>
+    </footer>              
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
